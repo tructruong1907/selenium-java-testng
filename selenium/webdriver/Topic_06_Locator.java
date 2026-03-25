@@ -2,7 +2,9 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -36,8 +38,8 @@ public class Topic_06_Locator {
         driver.findElement(By.id("Email")).sendKeys("cecilia.ttruc@gmail.com");
         sleep(3000);
 
-        //ở đây còn lỗi, cần sửa lại
-        driver.findElement(By.id("password")).sendKeys("Truc@123");
+        //ở đây còn lỗi, cần sửa lại - không dùng id cho password mà dùng name
+        driver.findElement(By.name("Password")).sendKeys("Truc@123");
         sleep(3000);
     }
     @Test
@@ -124,7 +126,6 @@ public class Topic_06_Locator {
         driver.findElement(By.xpath("//button[@class='button-1 login-button']")); //tìm tuyệt đối
         driver.findElement(By.xpath("//button[contains(@class,'login-button')]")); //tìm 1 phần
 
-
         //cover name
         driver.findElement(By.xpath("//input[@name='q']"));
 
@@ -140,6 +141,26 @@ public class Topic_06_Locator {
         driver.findElement(By.xpath("//button"));
 
 
+    }
+
+    @Test
+    public void TC_09_Relative_Locator(){
+       //element A
+        By passwordTextboxBy = By.cssSelector("input#Password");
+        //WebElement passwordTextbox = driver.findElement(By.cssSelector("input#Password"));
+        // element B
+        By rememberMeCheckboxBy = By.cssSelector("input#RememberMe");
+        //element C
+        By forgotPasswordLinkBy1 = By.cssSelector("span.forgot-password");
+        //element D
+        By loginButtonBy = By.cssSelector("div.buttons");
+        //Sử dụng 1 trong 4 elements khai báo ở trên để lấy ra được element E bằng Relative
+        WebElement rememberMeLabelText = driver.findElement(RelativeLocator.with(By.tagName("label"))
+                .below(passwordTextboxBy) //element E label đang nằm ở duói element A - passwordTexbox
+                //.toRightOf(rememberMeCheckboxBy) //label đang nằm bên phải element B - remember checkbox
+                //.toLeftOf(rememberMeCheckboxBy) // label đang nằm bên trai element C - forgot password link
+                //.above(loginButtonBy) //label đang nằm ở trên element D - login button
+        );
     }
 
     @AfterClass //gắn chỉ dẫn
