@@ -20,11 +20,12 @@ public class Topic_09_Exercise {
     //Arrange
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+
     }
 
     @Test //gắn chỉ dẫn
     public void TC_01_RegisterWithEmptyData(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
     //Action
      driver.findElement(By.xpath("//button[@type='submit']")).click();
      //Assert
@@ -38,6 +39,7 @@ public class Topic_09_Exercise {
     }
     @Test
     public void TC_02_Register_Invalid_Email(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
      driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
      driver.findElement(By.id("txtEmail")).sendKeys("TrucTruong@@123");
      driver.findElement(By.id("txtCEmail")).sendKeys("TrucTruong@@123");
@@ -48,11 +50,12 @@ public class Topic_09_Exercise {
      driver.findElement(By.xpath("//button[@type='submit']")).click();
 
      Assert.assertEquals(driver.findElement(By.id("txtEmail-error")).getText(),"Vui lòng nhập email hợp lệ");
-     Assert.assertEquals(driver.findElement(By.id("txtCEmail-error")).getText(),"Email nhập lại không đúng");
+     Assert.assertEquals(driver.findElement(By.id("txtCEmail-error")).getText(),"Vui lòng nhập email hợp lệ");
 
     }
     @Test
     public void TC_03_Register_Incorrect_Confirm_Email(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
     driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
     driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
     driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@1233");
@@ -67,6 +70,7 @@ public class Topic_09_Exercise {
     }
     @Test
     public void TC_04_Register_Invalid_Parword(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
      driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
      driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
      driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
@@ -83,6 +87,7 @@ public class Topic_09_Exercise {
     }
     @Test
     public void TC_05_Register_Invalid_confirm_Password(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
      driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
      driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
      driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
@@ -97,6 +102,7 @@ public class Topic_09_Exercise {
     }
     @Test
     public void TC_06_Register_Invalid_Phone_Number(){
+     driver.get("https://alada.vn/tai-khoan/dang-ky.html");
      driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
      driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
      driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
