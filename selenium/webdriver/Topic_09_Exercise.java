@@ -96,48 +96,37 @@ public class Topic_09_Exercise {
 
     }
     @Test
-    public void TC_06_Register_Invalid_Phone_Number1(){
+    public void TC_06_Register_Invalid_Phone_Number(){
      driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
      driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
      driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
      driver.findElement(By.name("txtPassword")).sendKeys("123456");
      driver.findElement(By.name("txtCPassword")).sendKeys("123456");
-     driver.findElement(By.id("txtPhone")).sendKeys("090123456"); //Phone Number <10
+     // Phone number <10
+     driver.findElement(By.id("txtPhone")).sendKeys("090123456");
 
      driver.findElement(By.xpath("//button[@type='submit']")).click();
 
      Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Số điện thoại phải từ 10-11 số.");
 
-    }
-
-    @Test
-    public void TC_07_Register_Invalid_Phone_Number2(){
-     driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
-     driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
-     driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
-     driver.findElement(By.name("txtPassword")).sendKeys("123456");
-     driver.findElement(By.name("txtCPassword")).sendKeys("123456");
-     driver.findElement(By.id("txtPhone")).sendKeys("090123456789"); //Phone Number >11
+     //Phone Number>11
+     driver.findElement(By.id("txtPhone")).clear();
+     driver.findElement(By.id("txtPhone")).sendKeys("090123456789");
 
      driver.findElement(By.xpath("//button[@type='submit']")).click();
 
      Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Số điện thoại phải từ 10-11 số.");
 
-    }
-    @Test
-    public void TC_09_Register_Invalid_Phone_Number3(){
-     driver.findElement(By.id("txtFirstname")).sendKeys("Truc Truong");
-     driver.findElement(By.id("txtEmail")).sendKeys("tructruong@123");
-     driver.findElement(By.id("txtCEmail")).sendKeys("tructruong@123");
-     driver.findElement(By.name("txtPassword")).sendKeys("123456");
-     driver.findElement(By.name("txtCPassword")).sendKeys("123456");
-     driver.findElement(By.id("txtPhone")).sendKeys("0151234567"); //wrong prefix phone number
+     //Phone Number is wrong prefix number
+     driver.findElement(By.id("txtPhone")).clear();
+     driver.findElement(By.id("txtPhone")).sendKeys("0151234567");
 
      driver.findElement(By.xpath("//button[@type='submit']")).click();
 
      Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Số điện thoại bắt đầu bằng: 09 - 03 - 012 - 016 - 018 - 019 - 088 - 03 - 05 - 07 - 08");
 
     }
+
     @AfterClass //gắn chỉ dẫn
     //Đóng trình duyệt
     public void closeBrowser(){
