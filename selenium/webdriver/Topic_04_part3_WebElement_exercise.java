@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -232,13 +233,15 @@ public class Topic_04_part3_WebElement_exercise {
 
     @Test
     public void TC_08_Login_Incorrect_Email_Pass() throws InterruptedException {
-        driver =  new ChromeDriver();
+        driver =  new FirefoxDriver();
+        //driver =  new ChromeDriver();
         driver.get("http://live.techpanda.org/");
 
         driver.findElement(By.xpath("//div[@class='footer']//a[@title='My Account']")).click();
         driver.findElement(By.cssSelector("input#email")).sendKeys("tructruong@gmaill.12.com");
         driver.findElement(By.cssSelector("input#pass")).sendKeys("123456789");
         driver.findElement(By.xpath("//button[@title='Login']")).click();
+
         Assert.assertEquals(driver.findElement(By.cssSelector("li.error-msg span")).getText(),"Invalid login or password.");
         sleep(3000);
 

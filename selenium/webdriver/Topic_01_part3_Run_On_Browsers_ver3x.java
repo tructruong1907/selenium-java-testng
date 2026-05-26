@@ -1,27 +1,20 @@
 package webdriver;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
 
-import static java.lang.Thread.sleep;
-
-
-public class Topic_09_CSS_XPath {
+public class Topic_01_part3_Run_On_Browsers_ver3x {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn
         //mở web browser
     public void InitialBrowser(){
         driver = new ChromeDriver();
-        driver.get("https://demo.nopcommerce.com/books/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-
+        driver.get("https://demo.nopcommerce.com/");
     }
 
     //execute : viết test case
@@ -30,10 +23,7 @@ public class Topic_09_CSS_XPath {
     //cú pháp CSS:  tagname[attribute = 'value']
 
     @Test //gắn chỉ dẫn
-    public void TC_01_Use_Parent() throws InterruptedException {
-       //driver.findElement(By.xpath("//article[@data-productid='37']//button[@class='button-2 product-box-add-to-cart-button']")).click();
-       driver.findElement(By.xpath("//article[@data-productid='37']//button[contains(@class,'product-box-add')]")).click();
-       sleep(3000);
+    public void TC_01_(){
 
     }
     @Test

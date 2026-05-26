@@ -5,6 +5,64 @@
       <root url="jar://$PROJECT_DIR$/libraries/testng-7.12.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libraries/SrcDocs" />
+      <root url="file://$PROJECT_DIR$/libraries/SrcDocs" />
+      <root url="file://$PROJECT_DIR$/SourceDocs" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/antlr4-runtime-4.11.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/auto-service-annotations-1.1.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/bcpkix-jdk18on-1.83-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/bcprov-jdk18on-1.83-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/bcutil-jdk18on-1.83-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/byte-buddy-1.18.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/caffeine-3.2.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/checker-qual-3.53.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/error_prone_annotations-2.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/failsafe-3.3.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/failureaccess-1.0.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/graphql-java-24.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/guava-33.5.0-jre-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/j2objc-annotations-3.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/java-dataloader-5.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/jcommander-1.82-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/jeromq-0.6.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/jnacl-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/jspecify-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-buffer-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-codec-base-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-codec-compression-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-codec-http-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-common-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-handler-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-resolver-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-transport-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/netty-transport-native-unix-common-4.2.10.Final-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-api-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-common-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-context-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-exporter-logging-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-common-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-extension-autoconfigure-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-extension-autoconfigure-spi-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-logs-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-metrics-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/opentelemetry-sdk-trace-1.59.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/reactive-streams-1.0.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-api-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-chrome-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-chromium-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-edge-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-firefox-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-grid-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-http-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-ie-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-json-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-manager-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-remote-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-safari-driver-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/selenium-support-4.41.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SourceDocs/tomlj-1.1.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
