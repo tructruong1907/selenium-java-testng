@@ -12,7 +12,7 @@ import java.time.Duration;
 import static java.lang.Thread.sleep;
 
 
-public class Topic_09_12_CSS_XPath {
+public class Topic_05_CSS_XPath {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn

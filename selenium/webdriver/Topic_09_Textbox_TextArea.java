@@ -2,8 +2,6 @@ package webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,13 +11,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.time.Instant;
 import java.util.Random;
 
 import static java.lang.Thread.sleep;
 
 
-public class Topic_05_part03_Textbox_TextArea {
+public class Topic_09_Textbox_TextArea {
         WebDriver driver;
         By loadingIcon = By.cssSelector("div.oxd-loading-spinner");
         String firstName;

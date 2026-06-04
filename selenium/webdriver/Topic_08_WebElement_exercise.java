@@ -16,7 +16,7 @@ import java.time.Duration;
 import static java.lang.Thread.sleep;
 
 
-public class Topic_04_part3_WebElement_exercise {
+public class Topic_08_WebElement_exercise {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn

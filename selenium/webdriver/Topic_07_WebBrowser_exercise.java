@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Topic_04_part3_WebBrowser_exercise {
+public class Topic_07_WebBrowser_exercise {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn

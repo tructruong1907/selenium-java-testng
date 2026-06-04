@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Topic_02_part3_Browser_Command {
+public class Topic_05_Browser_Command {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn

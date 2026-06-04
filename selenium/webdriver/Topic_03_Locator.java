@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import static java.lang.Thread.sleep;
 
 
-public class Topic_06_Locator {
+public class Topic_03_Locator {
         WebDriver driver;
 
    @BeforeClass //gắn chỉ dẫn
