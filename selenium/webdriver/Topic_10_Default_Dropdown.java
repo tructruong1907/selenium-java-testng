@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,6 +14,7 @@ import org.testng.annotations.Test;
 
 import static java.lang.Thread.sleep;
 
+import java.time.Duration;
 import java.util.List;
 
 
@@ -71,6 +74,10 @@ public class Topic_10_Default_Dropdown {
     @Test
     public void TC_02_rode_site() throws InterruptedException{
        driver.get("https://rode.com/en-int/support/where-to-buy");
+
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+       wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("select#country")));;
+
        new Select(driver.findElement(By.cssSelector("select#country"))).selectByVisibleText("Vietnam");
        driver.findElement(By.cssSelector("input#map_search_query")).sendKeys("Ho Chi Minh");
        driver.findElement(By.xpath("//button[text()='Search']")).click();
